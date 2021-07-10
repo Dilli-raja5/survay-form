@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <script src="https://kit.fontawesome.com/ef9f68538a.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+    .body{
+        background-color: rgba(245, 245, 245, 0.404);
+        margin: 3% 5% 3% 5%;
+        padding-bottom: 100px;
+        position: relative;
+    }
+    span{
+        color: red;
+    }
+    .text{
+        padding: 10px;
+        font-family: 'Encode Sans SC', sans-serif;
+    }
+   .div-last-name{
+       position: absolute;
+       top: 28px;
+       left: 30%;
+   }
+   .fa1{
+       color: goldenrod;
+       padding: 10px;
+   }
+    .satisfied{
+            position: relative;
+            font-family:'Encode Sans SC', sans-serif;
+            padding: 10px;
+    }
+    .likely{
+            position: relative;
+            font-family:'Encode Sans SC', sans-serif;
+            padding: 10px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+    }
+    .satisfied1{
+            position: absolute;
+            top: 30px;
+            left: 20%;
+            font-family:'Encode Sans SC', sans-serif;
+    }
+    .likely1{
+            position: absolute;
+            top: 60px;
+            left: 20%;
+            font-family:'Encode Sans SC', sans-serif;
+    }
+    .purchase{
+            position: relative;
+            top: 10px;
+            font-family:'Encode Sans SC', sans-serif;
+            padding: 10px;
+            background-color: #eee;
+    }
+    .service{
+            position: relative;
+            top: 10px;
+            font-family:'Encode Sans SC', sans-serif;
+            padding: 10px;
+            
+    }
+    .purchase1{
+            position: absolute;
+            top: 8px;
+            left: 23%;
+            font-family:'Encode Sans SC', sans-serif;
+    }
+    .suggestion{
+            position: relative;
+            top: 30px;
+            left: 10px;
+            bottom: 10px;
+            font-family:'Encode Sans SC', sans-serif;
+    }
+   </style>
+   
+</head>
+<body>
+   <div class="body">
+        <div class="text" >
+          <strong> Name</strong><span>*</span><br>
+            <input style="width: 23% ; height: 25px;" type="text" name="first-name" id="first-name" required><br>
+            <label for="first-name">first</label>
+
+            <div class="div-last-name">
+            <input style="width: 160% ; height: 25px;" type="text" name="last-name" id="last-name"> <br>
+            <label for="last-name">Last</label>
+            </div>
+            
+        </div>
+
+        <div class="text">
+            <strong> Email </strong><span>*</span> <br>
+            <input style="width: 640px ; height: 25px;" type="text" name="email" id="Email" required>
+        </div>
+
+        <div class="text">
+            <strong>Your Experience</strong><span>*</span>
+            <div>
+                <i class="fa1 fas fa-star fa-2x"></i>
+                <i class="fa1 fas fa-star fa-2x"></i>
+                <i class="fa1 fas fa-star fa-2x"></i>
+                <i class="fa1 fas fa-star fa-2x"></i>
+                <i class="fa1 fas fa-star fa-2x"></i>
+            </div>
+            <p>Oerall, how would you rate your experience with us?</p>
+        </div>
+
+        <div class="satisfied">
+                <strong>How satisfied are you with</strong><span>*</span>
+                    <div >
+                        <div class="satisfied1">Very Unsatisfied</div>
+                        <div class="satisfied1" style="padding-left: 15%;">Unsatisfied</div>
+                        <div class="satisfied1" style="padding-left: 30%;">Neutral</div>
+                        <div class="satisfied1" style="padding-left: 45%;">Satisfied</div>
+                        <div class="satisfied1" style="padding-left: 60%;">Very Satisfied</div>
+                    </div>
+            </div>           
+                
+            <div class="purchase">
+                    Purchase
+                      <input type="radio" name="Purchase" id="" style="position: absolute;left: 23%;">
+                      <input type="radio" name="Purchase" id="" style="position: absolute;left: 37%;">
+                      <input type="radio" name="Purchase" id="" style="position: absolute;left: 51%;">
+                      <input type="radio" name="Purchase" id="" style="position: absolute;left: 67%;">
+                      <input type="radio" name="Purchase" id="" style="position: absolute;left: 83%;">
+            </div>    
+           
+            <div class="service">
+                    Service
+                      <input type="radio" name="Service" id="" style="position: absolute;left: 23%;">
+                      <input type="radio" name="Service" id="" style="position: absolute;left: 37%;">
+                      <input type="radio" name="Service" id="" style="position: absolute;left: 51%;">
+                      <input type="radio" name="Service" id="" style="position: absolute;left: 67%;">
+                      <input type="radio" name="Service" id="" style="position: absolute;left: 83%;">
+            </div>
+       
+            <div class="purchase">
+                   Company Overall
+                      <input type="radio" name="CompanyOverall" id="" style="position: absolute;left: 23%;">
+                      <input type="radio" name="CompanyOverall" id="" style="position: absolute;left: 37%;">
+                      <input type="radio" name="CompanyOverall" id="" style="position: absolute;left: 51%;">
+                      <input type="radio" name="CompanyOverall" id="" style="position: absolute;left: 67%;">
+                      <input type="radio" name="CompanyOverall" id="" style="position: absolute;left: 83%;">
+            </div>
+          
+            <div class="likely">
+                <strong>How likely are you to</strong><span>*</span>
+                    <div >
+                        <div class="likely1">Very Unsatisfied</div>
+                        <div class="likely1" style="padding-left: 15%;">Unsatisfied</div>
+                        <div class="likely1" style="padding-left: 30%;">Neutral</div>
+                        <div class="likely1" style="padding-left: 45%;">Satisfied</div>
+                        <div class="likely1" style="padding-left: 60%;">Very Satisfied</div>
+                    </div>
+            </div>           
+                
+            <div class="purchase">
+                    Buy from us again
+                      <input type="radio" name="Buy" id="" style="position: absolute;left: 23%;">
+                      <input type="radio" name="Buy" id="" style="position: absolute;left: 37%;">
+                      <input type="radio" name="Buy" id="" style="position: absolute;left: 51%;">
+                      <input type="radio" name="Buy" id="" style="position: absolute;left: 67%;">
+                      <input type="radio" name="Buy" id="" style="position: absolute;left: 83%;">
+            </div>    
+           
+            <div class="service">
+                    Recommend our <br>
+                    product to others
+                      <input type="radio" name="product" id="" style="position: absolute;left: 23%;">
+                      <input type="radio" name="product" id="" style="position: absolute;left: 37%;">
+                      <input type="radio" name="product" id="" style="position: absolute;left: 51%;">
+                      <input type="radio" name="product" id="" style="position: absolute;left: 67%;">
+                      <input type="radio" name="product" id="" style="position: absolute;left: 83%;">
+            </div>
+       
+            <div class="purchase">
+                   Recommend our <br>
+                   company to others
+                      <input type="radio" name="company" id="" style="position: absolute;left: 23%;">
+                      <input type="radio" name="company" id="" style="position: absolute;left: 37%;">
+                      <input type="radio" name="company" id="" style="position: absolute;left: 51%;">
+                      <input type="radio" name="company" id="" style="position: absolute;left: 67%;">
+                      <input type="radio" name="company" id="" style="position: absolute;left: 83%;">
+            </div>
+
+            <div class="suggestion">
+                <label for="txt"> <strong>Additional comments or suggestions</strong></label> <br>
+                <input type="text" name="txt" id="txt" style="height: 150px; width: 97%;">
+            </div>
+            <div style="position: relative; top: 50px; left: 10px;">
+                <input type="submit" value="Submit" style="height: 50px; width: 85px;">
+            </div>
+           
+           
+           
+    
+   </div>
+
+</body>
+</html>
